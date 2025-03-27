@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="summary" type="id" />
+    <item name="subtitle" type="id" />
+    <item name="tv_total_table_label" type="id" />
+    <item name="tv_total_table" type="id" />
+    <item name="tv_total_npeople_label" type="id" />
+    <item name="tv_total_npeople_table" type="id" />
+    <item name="tv_percentage_label" type="id" />
+    <item name="tv_percentage" type="id" />
+    <item name="separator" type="id" />
+    <item name="tv_total_amount_label" type="id" />
+    <item name="tv_total_amount" type="id" />
+    <item name="btn_restart" type="id" />
+</resources>
