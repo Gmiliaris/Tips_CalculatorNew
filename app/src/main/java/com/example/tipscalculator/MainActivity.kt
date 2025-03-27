@@ -1,13 +1,11 @@
 package com.example.tipscalculator
-
 import android.os.Bundle
-import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.tipscalculator.databinding.ActivityMainBinding
-import com.google.android.material.textfield.TextInputEditText
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -21,11 +19,41 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val btnCalculate: Button = findViewById(R.id.btn_calculate)
-        val edtTotal: TextInputEditText = findViewById(R.id.tie_total)
-        val edtNumPeople: TextInputEditText = findViewById(R.id.tie_num_people)
 
-        binding.btnClean.setOnClickListener {  }
-        binding.btnCalculate.setOnClickListener {  }
+        var percentage: Int = 0
+        binding.rbOptionOne.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                percentage = 10
+            }
+        }
+        binding.rbOptionTwo.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                percentage = 15
+            }
+        }
+        binding.rbOptionThree.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                percentage = 20
+            }
+        }
+        binding.btnCalculate.setOnClickListener {
+            val totalTableTemp = binding.tieTotal.text
+            val nPeopleTemp = binding.tieNumPeople.text
+            val percentageTemp = binding.rg_.text
+
+
+
+
+
+
+            val totalTable: Float = binding.tieTotal.text.toString().toFloat()
+            val nPeolple: Float = binding.tieNumPeople.text.toString().toFloat()
+
+            val totalTemp = totalTable / nPeolple
+            val tips = totalTemp * percentage / 100
+            val totalWithTips = totalTemp + tips
+        }
+
     }
+}
 }
