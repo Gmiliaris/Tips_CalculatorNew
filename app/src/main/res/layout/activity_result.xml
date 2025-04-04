@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
     tools:context=".ResultActivity">
 
     <TextView
@@ -15,6 +16,7 @@
         android:layout_marginTop="36dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
+        android:textColor="@color/white"
         android:text="Summary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,6 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:textColor="@color/white"
         android:text="Kindly review your account summary below."
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/summary"
@@ -35,6 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
+        android:textColor="@color/white"
         android:text="Total Table:"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,6 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_total_table_label"
         tools:text="R$ 250,00" />
@@ -54,6 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:textColor="@color/white"
         android:text="Num of people:"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/tv_total_table_label"
@@ -63,6 +69,7 @@
         android:id="@+id/tv_total_npeople_table"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_total_npeople_label"
@@ -72,6 +79,7 @@
         android:id="@+id/tv_percentage_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:text="Percentage"
@@ -83,6 +91,7 @@
         android:id="@+id/tv_percentage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_percentage_label"
@@ -95,7 +104,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:background="@color/black"
+        android:background="@color/GraphiteGrey"
         app:layout_constraintTop_toBottomOf="@+id/tv_percentage_label"
         tools:layout_editor_absoluteX="16dp" />
 
@@ -104,6 +113,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:textColor="@color/white"
         android:layout_marginTop="32dp"
         android:text="Total"
         android:textSize="24sp"
@@ -114,6 +124,7 @@
     <TextView
         android:id="@+id/tv_total_amount"
         android:layout_width="wrap_content"
+        android:textColor="@color/white"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:textSize="24sp"
@@ -125,15 +136,19 @@
     <ImageView
         android:id="@+id/iv_background"
         android:layout_width="wrap_content"
-        android:layout_height="300dp"
+        android:layout_height="200dp"
         android:src="@drawable/donation"
-        app:layout_constraintBottom_toTopOf="@+id/btn_restart" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_restart"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total_amount"
+        app:tint="@color/GraphiteGrey" />
     <Button
         android:id="@+id/btn_restart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="restart"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="Restart"
         app:layout_constraintBottom_toBottomOf="parent" />
 
 

@@ -5,15 +5,17 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/iv_logo"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:src="@drawable/paying"
         app:layout_constraintStart_toStartOf="@+id/tv_title"
-        app:layout_constraintTop_toTopOf="@+id/tv_title" />
+        app:layout_constraintTop_toTopOf="@+id/tv_title"
+        app:tint="@color/Secundary" />
 
     <TextView
         android:id="@+id/tv_title"
@@ -22,10 +24,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="36dp"
-        android:gravity="center_horizontal"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal"
         android:text="Tips Calculator"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -35,9 +38,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginTop="32dp"
-        android:text="Fill in the fields below to calculate your account"
+        android:layout_marginEnd="16dp"
+        android:text="How much should you tip? Find out below!"
+        android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,6 +53,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Enter the bill amount"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/tv_subtitle"
         app:layout_constraintTop_toBottomOf="@+id/tv_subtitle" />
 
@@ -70,6 +76,7 @@
             android:hint="Ex : $100,00"
             android:inputType="numberDecimal"
             android:paddingStart="0dp"
+            android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -81,6 +88,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Enter the number of people"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/til_total"
         app:layout_constraintTop_toBottomOf="@+id/til_total" />
 
@@ -103,6 +112,7 @@
             android:inputType="number"
             android:maxLength="2"
             android:paddingStart="0dp"
+            android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -114,6 +124,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Percentage"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/til_number_of_people"
         app:layout_constraintTop_toBottomOf="@+id/til_number_of_people" />
 
@@ -136,6 +148,7 @@
             android:inputType="number"
             android:maxLength="3"
             android:paddingStart="0dp"
+            android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -150,18 +163,19 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_clean"
-        style="@style/Widget.Material3.Button.OutlinedButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="16dp"
+        android:textColor="@color/white"
         android:text="Clean"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/vertical_guideline"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_done"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -169,6 +183,8 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:text="Calculate"
+        android:textSize="16sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/vertical_guideline" />
