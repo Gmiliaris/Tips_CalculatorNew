@@ -17,7 +17,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:textColor="@color/white"
-        android:text="Summary"
+        android:text="@string/summary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:textColor="@color/white"
-        android:text="Kindly review your account summary below."
+        android:text="@string/account_summary"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/summary"
         app:layout_constraintTop_toBottomOf="@+id/summary" />
@@ -39,7 +39,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:textColor="@color/white"
-        android:text="Total Table:"
+        android:text="@string/total_table"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subtitle" />
@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:textColor="@color/white"
-        android:text="Num of people:"
+        android:text="@string/num_of_people"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/tv_total_table_label"
         app:layout_constraintTop_toBottomOf="@+id/tv_total_table_label" />
@@ -82,7 +82,7 @@
         android:textColor="@color/white"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
-        android:text="Percentage"
+        android:text="@string/percentage_summary"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_total_npeople_label" />
@@ -115,7 +115,7 @@
         android:layout_marginStart="16dp"
         android:textColor="@color/white"
         android:layout_marginTop="32dp"
-        android:text="Total"
+        android:text="@string/total"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -140,7 +140,9 @@
         android:src="@drawable/donation"
         app:layout_constraintBottom_toTopOf="@+id/btn_restart"
         app:layout_constraintTop_toBottomOf="@+id/tv_total_amount"
-        app:tint="@color/GraphiteGrey" />
+        app:tint="@color/GraphiteGrey"
+        tools:ignore="MissingConstraints" />
+
     <Button
         android:id="@+id/btn_restart"
         android:layout_width="match_parent"
@@ -148,7 +150,7 @@
         android:layout_margin="16dp"
         android:textSize="16sp"
         android:textColor="@color/white"
-        android:text="Restart"
+        android:text="@string/restart"
         app:layout_constraintBottom_toBottomOf="parent" />
 
 

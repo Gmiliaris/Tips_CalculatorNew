@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">Tips Calculator</string>
+    <string name="tips_calculator">Tip Calculator</string>
+
+    <string name="bill_amount">Enter the bill amount</string>
+    <string name="number_of_people">Enter the number of people</string>
+    <string name="percentage">Percentage</string>
+    <string name="clean">Clean</string>
+    <string name="calculate">Calculate</string>
+    <string name="summary">Summary</string>
+    <string name="account_summary">Kindly review your account summary below.</string>
+    <string name="total_table">Total Table:</string>
+    <string name="num_of_people">Num of people:</string>
+    <string name="percentage_summary">Percentage</string>
+    <string name="total">Total</string>
+    <string name="restart">Restart</string>
+    <string name="main_subtitle">How much should you tip? Find out below!</string>
 </resources>
