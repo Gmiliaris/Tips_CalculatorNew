@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tips_calculator">Calculadora de \nGorjeta</string>
+    <string name="main_subtitle">Quanto você deve dar de gorjeta? Descubra abaixo!</string>
+    <string name="bill_amount">Insira o valor da conta</string>
+    <string name="number_of_people">Insira o número de pessoas</string>
+    <string name="percentage">Porcentagem</string>
+    <string name="clean">Limpar</string>
+    <string name="calculate">Calcular</string>
+    <string name="summary">Resumo</string>
+    <string name="account_summary">Por favor, revise o resumo da sua conta abaixo.</string>
+    <string name="total_table">Total da mesa:</string>
+    <string name="num_of_people">Número de pessoas:</string>
+    <string name="percentage_summary">Porcentagem</string>
+    <string name="total">Total</string>
+    <string name="restart">Refazer</string>
+
+</resources>
